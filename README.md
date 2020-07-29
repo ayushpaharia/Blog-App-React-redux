@@ -1,4 +1,4 @@
-# Realtime Chat Application
+# React Blog App
 [![Canonical Badge](https://img.shields.io/badge/Live__Site-EF3125?style=for-the-badge&logo=canonical)](https://react-redux-blogapp.netlify.app/)
 
 ![Chat Application](https://i.postimg.cc/HsC7zxqZ/image-1.png)
