@@ -10,4 +10,4 @@ This project is made by using React, Redux, Redux-Thunk, Axios and jsonplacehold
 The frontend is deployed using netlify
 
 Setup:
-- run ```npm i && npm start``` for both client and server side to start the development server
+- run ```npm i && npm start``` for client side to start the development server
