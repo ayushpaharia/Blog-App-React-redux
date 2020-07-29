@@ -9,13 +9,26 @@ class PostList extends React.Component {
   }
 
   renderList() {
+    const capitalize = (str) => {
+      if (typeof str === "string") {
+        return str.replace(/^\w/, (c) => c.toUpperCase());
+      } else {
+        return "";
+      }
+    };
     return this.props.posts.map((post) => {
       return (
         <div className="item" key={post.id}>
-          <i className="large middle aligned icon user" />
           <div className="description">
-            <h2>{post.title}</h2>
-            <p>{post.body}</p>
+            <div style={{ display: "flex", alignItems: "center" }}>
+              <i className="big middle aligned icon user" />
+              <h2
+                style={{ color: "#000", position: "relative", top: "-0.75rem" }}
+              >
+                {capitalize(post.title)}
+              </h2>
+            </div>
+            <p>{capitalize(post.body)}</p>
             <UserHeader userId={post.userId} />
           </div>
         </div>
